@@ -1,0 +1,170 @@
+// @import "reset.scss";
+//mixins
+@mixin flexme {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+}
+// patterns.css
+
+* {
+  font-family: "Montserrat", sans-serif;
+  .main-wrap {
+    margin: 2rem 2rem auto;
+    #home {
+      height: 100vh;
+      border-bottom: 3px dashed black;
+      padding-top: 2rem;
+      @include flexme;
+      flex-flow: column wrap;
+      nav {
+        @include flexme;
+        width: 50%;
+        text-decoration: none;
+        justify-content: space-evenly;
+        float: right;
+        a {
+          text-decoration: none;
+          color: black;
+          border: 1px solid black;
+          padding: 1rem;
+          width: 5rem;
+          text-align: center;
+        }
+      }
+      .home-icon {
+        height: 2rem;
+        width: 2rem;
+      }
+      h1,
+      h2 {
+        font-size: 3rem;
+      }
+      .home-face {
+        width: 20rem;
+        border-radius: 50%;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    #about {
+      height: 100vh;
+      border-bottom: 3px dashed black;
+      padding-top: 2rem;
+      @include flexme;
+      flex-flow: column wrap;
+      h1 {
+        font-size: 3rem;
+      }
+      nav {
+        @include flexme;
+        width: 50%;
+        text-decoration: none;
+        justify-content: space-evenly;
+        float: right;
+        a {
+          text-decoration: none;
+          color: black;
+          border: 1px solid black;
+          padding: 1rem;
+          width: 5rem;
+          text-align: center;
+        }
+      }
+      .home-icon {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+    #projects {
+      height: 100vh;
+      border-bottom: 3px dashed black;
+      padding-top: 2rem;
+      @include flexme;
+      flex-flow: column;
+      h1 {
+        font-size: 3rem;
+      }
+      nav {
+        @include flexme;
+        width: 50%;
+        text-decoration: none;
+        justify-content: space-evenly;
+        float: right;
+        a {
+          text-decoration: none;
+          color: black;
+          border: 1px solid black;
+          padding: 1rem;
+          width: 5rem;
+          text-align: center;
+        }
+      }
+      .home-icon {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+    #contact {
+      height: 100vh;
+      border-bottom: 3px dashed black;
+      padding-top: 2rem;
+      @include flexme;
+      flex-flow: column wrap;
+      h1 {
+        font-size: 3rem;
+      }
+      nav {
+        @include flexme;
+        width: 50%;
+        text-decoration: none;
+        justify-content: space-evenly;
+        float: right;
+        a {
+          text-decoration: none;
+          color: black;
+          border: 1px solid black;
+          padding: 1rem;
+          width: 5rem;
+          text-align: center;
+        }
+      }
+      .home-icon {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+    #blog {
+      height: 100vh;
+      border-bottom: 3px dashed black;
+      padding-top: 2rem;
+      @include flexme;
+      flex-flow: column wrap;
+      h1 {
+        font-size: 3rem;
+      }
+      nav {
+        @include flexme;
+        width: 50%;
+        text-decoration: none;
+        justify-content: space-evenly;
+        float: right;
+        a {
+          text-decoration: none;
+          color: black;
+          border: 1px solid black;
+          padding: 1rem;
+          width: 5rem;
+          text-align: center;
+        }
+      }
+      .home-icon {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}

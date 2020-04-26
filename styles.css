@@ -1,0 +1,285 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+* .main-wrap {
+  margin: 2rem 2rem auto;
+}
+
+* .main-wrap #home {
+  height: 100vh;
+  border-bottom: 3px dashed black;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+* .main-wrap #home nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 50%;
+  text-decoration: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  float: right;
+}
+
+* .main-wrap #home nav a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 5rem;
+  text-align: center;
+}
+
+* .main-wrap #home .home-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+* .main-wrap #home h1,
+* .main-wrap #home h2 {
+  font-size: 3rem;
+}
+
+* .main-wrap #home .home-face {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+* .main-wrap #home footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+* .main-wrap #about {
+  height: 100vh;
+  border-bottom: 3px dashed black;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+* .main-wrap #about h1 {
+  font-size: 3rem;
+}
+
+* .main-wrap #about nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 50%;
+  text-decoration: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  float: right;
+}
+
+* .main-wrap #about nav a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 5rem;
+  text-align: center;
+}
+
+* .main-wrap #about .home-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+* .main-wrap #projects {
+  height: 100vh;
+  border-bottom: 3px dashed black;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+
+* .main-wrap #projects h1 {
+  font-size: 3rem;
+}
+
+* .main-wrap #projects nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 50%;
+  text-decoration: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  float: right;
+}
+
+* .main-wrap #projects nav a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 5rem;
+  text-align: center;
+}
+
+* .main-wrap #projects .home-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+* .main-wrap #contact {
+  height: 100vh;
+  border-bottom: 3px dashed black;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+* .main-wrap #contact h1 {
+  font-size: 3rem;
+}
+
+* .main-wrap #contact nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 50%;
+  text-decoration: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  float: right;
+}
+
+* .main-wrap #contact nav a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 5rem;
+  text-align: center;
+}
+
+* .main-wrap #contact .home-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+* .main-wrap #blog {
+  height: 100vh;
+  border-bottom: 3px dashed black;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+* .main-wrap #blog h1 {
+  font-size: 3rem;
+}
+
+* .main-wrap #blog nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 50%;
+  text-decoration: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  float: right;
+}
+
+* .main-wrap #blog nav a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 5rem;
+  text-align: center;
+}
+
+* .main-wrap #blog .home-icon {
+  height: 2rem;
+  width: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */
