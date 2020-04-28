@@ -74,6 +74,7 @@
   padding: 1rem;
   width: 5rem;
   text-align: center;
+  background-color: white;
 }
 
 @media (max-width: 700px) {
@@ -170,6 +171,7 @@
   padding: 1rem;
   width: 5rem;
   text-align: center;
+  background-color: white;
 }
 
 * .main-wrap #about .about-column1 {
@@ -415,6 +417,10 @@
   }
 }
 
+* .main-wrap #projects h4 {
+  color: black;
+}
+
 * .main-wrap #projects header {
   margin-bottom: 2.4rem;
 }
@@ -450,6 +456,7 @@
   padding: 1rem;
   width: 5rem;
   text-align: center;
+  background-color: white;
 }
 
 * .main-wrap #projects .project-wrapper {
@@ -502,6 +509,7 @@
   font-size: 3rem;
   margin-top: 3rem;
   margin-left: 3rem;
+  color: black;
 }
 
 * .main-wrap #contact nav {
@@ -535,6 +543,7 @@
   padding: 1rem;
   width: 5rem;
   text-align: center;
+  background-color: white;
 }
 
 * .main-wrap #contact .contact-wrap {
@@ -629,5 +638,6 @@
   padding: 1rem;
   width: 5rem;
   text-align: center;
+  background-color: white;
 }
 /*# sourceMappingURL=styles.css.map */

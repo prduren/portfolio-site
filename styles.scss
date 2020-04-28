@@ -49,6 +49,7 @@ $mobile: "(max-width: 700px)";
             padding: 1rem;
             width: 5rem;
             text-align: center;
+            background-color: white;
             @media (max-width: 700px) {
               flex-basis: 2%;
             }
@@ -106,6 +107,7 @@ $mobile: "(max-width: 700px)";
             padding: 1rem;
             width: 5rem;
             text-align: center;
+            background-color: white;
           }
         }
       }
@@ -255,6 +257,9 @@ $mobile: "(max-width: 700px)";
           margin-top: 0;
         }
       }
+      h4 {
+        color: black;
+      }
       header {
         margin-bottom: 2.4rem;
 
@@ -274,6 +279,7 @@ $mobile: "(max-width: 700px)";
             padding: 1rem;
             width: 5rem;
             text-align: center;
+            background-color: white;
           }
         }
       }
@@ -303,7 +309,9 @@ $mobile: "(max-width: 700px)";
         font-size: 3rem;
         margin-top: 3rem;
         margin-left: 3rem;
+        color: black;
       }
+
       nav {
         @include flexme;
         width: 50%;
@@ -320,6 +328,7 @@ $mobile: "(max-width: 700px)";
           padding: 1rem;
           width: 5rem;
           text-align: center;
+          background-color: white;
         }
       }
       .contact-wrap {
@@ -371,6 +380,7 @@ $mobile: "(max-width: 700px)";
           padding: 1rem;
           width: 5rem;
           text-align: center;
+          background-color: white;
         }
       }
     }
