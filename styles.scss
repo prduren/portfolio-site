@@ -1,22 +1,14 @@
-// media queries between mobile and desktop are janky
-// button shadows on hover
+@import "background.scss";
+@import "variables.scss"; // media queries between mobile and desktop are janky
 // scroll snap
-// change background colors on click
+// change background colors random on load
 // get creative
-//mixins
-@mixin flexme {
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: 100%;
-}
 
-$mobile: "(max-width: 700px)";
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   .main-wrap {
     margin: 2rem 2rem auto;
-
     #home {
       height: 100vh;
       border-bottom: 3px dashed black;
@@ -39,6 +31,7 @@ $mobile: "(max-width: 700px)";
           text-decoration: none;
           justify-content: space-evenly;
           float: right;
+
           @media (max-width: 700px) {
             width: 100%;
           }
@@ -50,6 +43,12 @@ $mobile: "(max-width: 700px)";
             width: 5rem;
             text-align: center;
             background-color: white;
+            border-bottom: 0.5rem solid #3e3e3e;
+            border-left: 0.5rem solid #3e3e3e;
+            &:hover {
+              animation: shadow-pop-bl 0.5s forwards;
+              cursor: pointer;
+            }
             @media (max-width: 700px) {
               flex-basis: 2%;
             }
@@ -81,6 +80,22 @@ $mobile: "(max-width: 700px)";
         position: absolute;
         bottom: 0;
         right: 0;
+        .background-changer {
+          height: 10rem;
+          width: 5rem;
+          margin-bottom: 3rem;
+          margin-right: 2rem;
+          border-bottom: 0.5rem solid #3e3e3e;
+          border-right: 0.5rem solid #3e3e3e;
+          border-top: 0.1rem solid #3e3e3e;
+          border-left: 0.1rem solid #3e3e3e;
+          @media (max-width: 500px) {
+            display: none;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
     #about {
@@ -108,6 +123,10 @@ $mobile: "(max-width: 700px)";
             width: 5rem;
             text-align: center;
             background-color: white;
+            &:hover {
+              animation: shadow-pop-bl 0.5s forwards;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -222,13 +241,19 @@ $mobile: "(max-width: 700px)";
               height: 3rem;
             }
           }
+          #enjoy1 {
+            @media (max-width: 700px) {
+              transform: translate(3rem, 4rem);
+            }
+          }
           #enjoy2,
           #enjoy4 {
             margin-top: 5rem;
             margin-left: 2rem;
             @media (max-width: 700px) {
               margin: 0;
-              margin-left: 5rem;
+              margin-left: 7rem;
+              transform: translateY(-2rem);
             }
           }
           #enjoy3,
@@ -236,6 +261,7 @@ $mobile: "(max-width: 700px)";
             margin-left: 2rem;
             @media (max-width: 700px) {
               margin: 0;
+              transform: translateY(-5rem);
             }
           }
         }
@@ -280,6 +306,10 @@ $mobile: "(max-width: 700px)";
             width: 5rem;
             text-align: center;
             background-color: white;
+            &:hover {
+              animation: shadow-pop-bl 0.5s forwards;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -329,6 +359,10 @@ $mobile: "(max-width: 700px)";
           width: 5rem;
           text-align: center;
           background-color: white;
+          &:hover {
+            animation: shadow-pop-bl 0.5s forwards;
+            cursor: pointer;
+          }
         }
       }
       .contact-wrap {
@@ -381,6 +415,10 @@ $mobile: "(max-width: 700px)";
           width: 5rem;
           text-align: center;
           background-color: white;
+          &:hover {
+            animation: shadow-pop-bl 0.5s forwards;
+            cursor: pointer;
+          }
         }
       }
     }
