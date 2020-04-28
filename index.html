@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  class="pattern-grid-md"
+  style="background-color: pink;"
+  id="top"
+  lang="en"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,19 +17,13 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
     <title>parker duren!</title>
   </head>
   <body>
     <div class="main-wrap">
       <div id="home">
         <header>
-          <a href="#home">
-            <img
-              class="home-icon"
-              src="https://img.icons8.com/pastel-glyph/64/000000/home.png"
-            />
-          </a>
           <nav>
             <a href="#about">about</a>
             <a href="#projects">projects</a>
@@ -32,21 +31,19 @@
             <a href="#blog">blog</a>
           </nav>
         </header>
-        <div class="home-content">
-          <h1>// welcome.</h1>
-          <img class="home-face" src="./0.jpg" alt="my face" />
-          <h2>// my name is parker duren,</h2>
-          <h2>// and i'm a full stack developer.</h2>
-          <footer>
-            <button id="stripe" class="background-changer">i</button>
-            <button id="dot" class="background-changer">l</button>
-            <button id="normal" class="background-changer">t</button>
-          </footer>
-        </div>
+        <h1>// welcome.</h1>
+        <img class="home-face" src="./0.jpg" alt="my face" />
+        <h2>// my name is parker duren,</h2>
+        <h2>// and i'm a full stack developer.</h2>
+        <footer>
+          <button id="stripe" class="background-changer">i</button>
+          <button id="dot" class="background-changer">l</button>
+          <button id="normal" class="background-changer">t</button>
+        </footer>
       </div>
       <div id="about">
         <header>
-          <a href="#home">
+          <a href="#top">
             <img
               class="home-icon"
               src="https://img.icons8.com/pastel-glyph/64/000000/home.png"
@@ -59,29 +56,32 @@
             <a href="#blog">blog</a>
           </nav>
         </header>
-        <div class="about-content">
+        <div class="about-column1">
           <h1>// about.</h1>
-          <img src="./0.jpg" alt="my face" />
-          <p>
+          <img class="about-face" src="./0.jpg" alt="my face" />
+        </div>
+        <div class="about-column2">
+          <p class="about-p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             veniam alias eum dolore quam, porro repellat eius, ipsa explicabo
             inventore repellendus quis cum sequi obcaecati eveniet praesentium
             vitae commodi consectetur.
           </p>
-          <h4>education</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            unde modi sunt odit non, veniam enim perspiciatis molestias
-            excepturi numquam architecto repellendus? Facere quia, voluptatem
-            ullam fuga quod doloribus deleniti!
-          </p>
-          <h4>things i enjoy</h4>
+          <h4 class="education-h4">education</h4>
+          <h4 class="enjoy-h4">things i enjoy</h4>
+          <ul class="education-ul">
+            <li>
+              University of North Texas - Undergraduate in International Studies
+            </li>
+            <li>University of North Texas - Undergraduate in Japanese</li>
+            <li>HTML, CSS, SCSS, Vanilla JS, React</li>
+          </ul>
           <div class="enjoy-wrapper">
-            <img src="https://loremflickr.com/50/50" alt="" />
-            <img src="https://loremflickr.com/50/50" alt="" />
-            <img src="https://loremflickr.com/50/50" alt="" />
-            <img src="https://loremflickr.com/50/50" alt="" />
-            <img src="https://loremflickr.com/50/50" alt="" />
+            <img id="enjoy1" src="https://loremflickr.com/50/50" alt="" />
+            <img id="enjoy2" src="https://loremflickr.com/50/50" alt="" />
+            <img id="enjoy3" src="https://loremflickr.com/50/50" alt="" />
+            <img id="enjoy4" src="https://loremflickr.com/50/50" alt="" />
+            <img id="enjoy5" src="https://loremflickr.com/50/50" alt="" />
           </div>
         </div>
       </div>
@@ -100,15 +100,21 @@
             <a href="index.html#blog">blog</a>
           </nav>
         </header>
-        <div class="projects-content">
-          <h1>// projects.</h1>
-          <div class="project-wrap">
+        <h1>// projects.</h1>
+        <div class="project-wrapper">
+          <div class="project-item">
             <img src="https://loremflickr.com/300/300" alt="" />
             <h4>this is a project</h4>
+          </div>
+          <div class="project-item">
             <img src="https://loremflickr.com/300/300" alt="" />
             <h4>this is a project</h4>
+          </div>
+          <div class="project-item">
             <img src="https://loremflickr.com/300/300" alt="" />
             <h4>this is a project</h4>
+          </div>
+          <div class="project-item">
             <img src="https://loremflickr.com/300/300" alt="" />
             <h4>this is a project</h4>
           </div>
@@ -129,13 +135,23 @@
             <a href="#blog">blog</a>
           </nav>
         </header>
-        <div class="contact-content">
-          <h1>// contact.</h1>
-          <div class="contact-wrap">
-            <img src="https://loremflickr.com/300/300" alt="" />
-            <img src="https://loremflickr.com/300/300" alt="" />
-            <img src="https://loremflickr.com/300/300" alt="" />
-          </div>
+        <h1>// contact.</h1>
+        <div class="contact-wrap">
+          <img
+            class="contact-item"
+            src="https://loremflickr.com/300/300"
+            alt=""
+          />
+          <img
+            class="contact-item"
+            src="https://loremflickr.com/300/300"
+            alt=""
+          />
+          <img
+            class="contact-item"
+            src="https://loremflickr.com/300/300"
+            alt=""
+          />
         </div>
       </div>
       <div id="blog">
@@ -153,12 +169,7 @@
             <a href="#blog">blog</a>
           </nav>
         </header>
-        <div class="blog-content">
-          <h1>// blog.</h1>
-          <h4>blog title</h4>
-          <h4>another blog title</h4>
-          <h4>uneventful blog</h4>
-        </div>
+        <h1>// blog.</h1>
       </div>
     </div>
   </body>

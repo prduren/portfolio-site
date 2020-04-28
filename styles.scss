@@ -1,48 +1,80 @@
-// @import "reset.scss";
+// media queries between mobile and desktop are janky
+// button shadows on hover
+// scroll snap
+// change background colors on click
+// get creative
 //mixins
 @mixin flexme {
   display: flex;
   flex-flow: row wrap;
   flex-basis: 100%;
 }
-// patterns.css
 
+$mobile: "(max-width: 700px)";
 * {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
   .main-wrap {
     margin: 2rem 2rem auto;
+
     #home {
       height: 100vh;
       border-bottom: 3px dashed black;
-      padding-top: 2rem;
+      scroll-snap-align: start;
+      @media (max-width: 700px) {
+        align-items: center;
+        text-align: center;
+      }
+      // padding-top: 2rem;
       @include flexme;
       flex-flow: column wrap;
-      nav {
-        @include flexme;
-        width: 50%;
-        text-decoration: none;
-        justify-content: space-evenly;
-        float: right;
-        a {
-          text-decoration: none;
-          color: black;
-          border: 1px solid black;
-          padding: 1rem;
-          width: 5rem;
-          text-align: center;
+      header {
+        margin-bottom: 3rem;
+        @media (max-width: 700px) {
+          margin-bottom: 0;
         }
-      }
-      .home-icon {
-        height: 2rem;
-        width: 2rem;
+        nav {
+          @include flexme;
+          width: 50%;
+          text-decoration: none;
+          justify-content: space-evenly;
+          float: right;
+          @media (max-width: 700px) {
+            width: 100%;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 1rem;
+            width: 5rem;
+            text-align: center;
+            @media (max-width: 700px) {
+              flex-basis: 2%;
+            }
+          }
+        }
       }
       h1,
       h2 {
         font-size: 3rem;
+        padding: 0;
+        margin: 1rem;
+        margin-left: 3rem;
+        color: black;
+        @media (max-width: 700px) {
+          font-size: 2rem;
+          margin-left: 1rem;
+        }
       }
       .home-face {
         width: 20rem;
         border-radius: 50%;
+        margin-left: 3rem;
+        @media (max-width: 700px) {
+          width: 10rem;
+          margin-left: 0;
+        }
       }
       footer {
         position: absolute;
@@ -55,28 +87,156 @@
       border-bottom: 3px dashed black;
       padding-top: 2rem;
       @include flexme;
-      flex-flow: column wrap;
-      h1 {
-        font-size: 3rem;
-      }
-      nav {
-        @include flexme;
-        width: 50%;
-        text-decoration: none;
-        justify-content: space-evenly;
-        float: right;
-        a {
+      scroll-snap-align: start;
+      header {
+        width: 100%;
+        nav {
+          @include flexme;
+          width: 50%;
           text-decoration: none;
-          color: black;
-          border: 1px solid black;
-          padding: 1rem;
-          width: 5rem;
-          text-align: center;
+          justify-content: space-evenly;
+          float: right;
+          @media (max-width: 700px) {
+            display: none;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 1rem;
+            width: 5rem;
+            text-align: center;
+          }
         }
       }
-      .home-icon {
-        height: 2rem;
-        width: 2rem;
+      .about-column1 {
+        flex-basis: 25%;
+        margin-left: 3rem;
+        margin-bottom: 10rem;
+        color: black;
+        @media (max-width: 700px) {
+          margin-bottom: 2rem;
+          margin-left: 0;
+        }
+        @media (max-width: 1400px) {
+          margin-bottom: 2rem;
+        }
+        h1 {
+          font-size: 3rem;
+          margin-top: 0;
+          margin-bottom: 2rem;
+          @media (max-width: 700px) {
+            width: 20rem;
+            margin-top: 3rem;
+            margin-bottom: 0;
+          }
+        }
+        img {
+          border-radius: 50%;
+          width: 20rem;
+          @media (max-width: 700px) {
+            display: none;
+          }
+          @media (max-width: 1400px) {
+            width: 15rem;
+          }
+        }
+      }
+      .about-column2 {
+        flex-basis: 70%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        // justify-content: space-around;
+        color: black;
+        @media (max-width: 700px) {
+          flex-basis: 100%;
+        }
+        @media (max-width: 1400px) {
+          flex-basis: 100%;
+        }
+        .about-p {
+          font-family: "Roboto Mono", sans-serif;
+          flex-basis: 100%;
+          @media (max-width: 700px) {
+            width: 100%;
+            font-size: 1.3rem;
+          }
+        }
+        .education-ul {
+          flex-basis: 40%;
+          font-family: "Roboto Mono", sans-serif;
+          height: 20rem;
+          margin-left: -1.8rem;
+          li {
+            line-height: 1.7rem;
+            font-family: "Roboto Mono", sans-serif;
+            margin-bottom: 1rem;
+            @media (max-width: 700px) {
+              margin-bottom: 0.5rem;
+            }
+          }
+          @media (max-width: 700px) {
+            flex-basis: 50%;
+            font-size: 1rem;
+          }
+        }
+        .education-h4 {
+          flex-basis: 40%;
+          height: 5rem;
+          margin-top: 0;
+          height: 2rem;
+          font-family: "Roboto Mono", sans-serif;
+          text-decoration: underline;
+        }
+        .enjoy-h4 {
+          flex-basis: 50%;
+          margin-top: 0;
+          height: 2rem;
+          font-family: "Roboto Mono", sans-serif;
+          text-decoration: underline;
+          @media (max-width: 700px) {
+            flex-basis: 40%;
+            margin-left: 3.5rem;
+          }
+        }
+        .enjoy-wrapper {
+          flex-basis: 50%;
+          height: 10rem;
+          display: flex;
+          justify-content: flex-start;
+          @media (max-width: 700px) {
+            width: 20rem;
+            flex-flow: column;
+            flex-basis: 20%;
+            margin-top: 3rem;
+          }
+          img {
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+            @media (max-width: 700px) {
+              width: 3rem;
+              height: 3rem;
+            }
+          }
+          #enjoy2,
+          #enjoy4 {
+            margin-top: 5rem;
+            margin-left: 2rem;
+            @media (max-width: 700px) {
+              margin: 0;
+              margin-left: 5rem;
+            }
+          }
+          #enjoy3,
+          #enjoy5 {
+            margin-left: 2rem;
+            @media (max-width: 700px) {
+              margin: 0;
+            }
+          }
+        }
       }
     }
     #projects {
@@ -85,27 +245,51 @@
       padding-top: 2rem;
       @include flexme;
       flex-flow: column;
+      scroll-snap-align: start;
       h1 {
         font-size: 3rem;
-      }
-      nav {
-        @include flexme;
-        width: 50%;
-        text-decoration: none;
-        justify-content: space-evenly;
-        float: right;
-        a {
-          text-decoration: none;
-          color: black;
-          border: 1px solid black;
-          padding: 1rem;
-          width: 5rem;
-          text-align: center;
+        color: black;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        @media (max-width: 700px) {
+          margin-top: 0;
         }
       }
-      .home-icon {
-        height: 2rem;
-        width: 2rem;
+      header {
+        margin-bottom: 2.4rem;
+
+        nav {
+          @include flexme;
+          width: 50%;
+          text-decoration: none;
+          justify-content: space-evenly;
+          float: right;
+          @media (max-width: 700px) {
+            display: none;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 1rem;
+            width: 5rem;
+            text-align: center;
+          }
+        }
+      }
+      .project-wrapper {
+        @include flexme;
+        margin-top: 3rem;
+        justify-content: space-evenly;
+        .project-item {
+          flex-basis: 20%;
+          img {
+            @media (max-width: 700px) {
+              width: 10rem;
+              height: 10rem;
+            }
+          }
+        }
       }
     }
     #contact {
@@ -114,8 +298,11 @@
       padding-top: 2rem;
       @include flexme;
       flex-flow: column wrap;
+      scroll-snap-align: start;
       h1 {
         font-size: 3rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
       }
       nav {
         @include flexme;
@@ -123,6 +310,9 @@
         text-decoration: none;
         justify-content: space-evenly;
         float: right;
+        @media (max-width: 700px) {
+          display: none;
+        }
         a {
           text-decoration: none;
           color: black;
@@ -132,9 +322,24 @@
           text-align: center;
         }
       }
-      .home-icon {
-        height: 2rem;
-        width: 2rem;
+      .contact-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 9rem;
+        @media (max-width: 700px) {
+          flex-flow: column wrap;
+          align-items: center;
+          margin-top: 5rem;
+        }
+        .contact-item {
+          border-radius: 50%;
+          width: 20rem;
+          @media (max-width: 700px) {
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 3rem;
+          }
+        }
       }
     }
     #blog {
@@ -143,8 +348,12 @@
       padding-top: 2rem;
       @include flexme;
       flex-flow: column wrap;
+      scroll-snap-align: start;
       h1 {
         font-size: 3rem;
+        margin-left: 3rem;
+        margin-top: 3rem;
+        color: black;
       }
       nav {
         @include flexme;
@@ -152,6 +361,9 @@
         text-decoration: none;
         justify-content: space-evenly;
         float: right;
+        @media (max-width: 700px) {
+          display: none;
+        }
         a {
           text-decoration: none;
           color: black;
@@ -160,10 +372,6 @@
           width: 5rem;
           text-align: center;
         }
-      }
-      .home-icon {
-        height: 2rem;
-        width: 2rem;
       }
     }
   }
