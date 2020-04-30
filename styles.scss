@@ -17,7 +17,6 @@
     margin: 0 2rem auto;
     #home {
       height: 100vh;
-      border-bottom: 3px dashed black;
       width: 80%;
       margin: 0 auto;
       background-color: white;
@@ -115,7 +114,6 @@
     }
     #about {
       height: 100vh;
-      border-bottom: 3px dashed black;
       padding-top: 2rem;
       @include flexme;
       width: 80%;
@@ -306,7 +304,6 @@
     }
     #projects {
       height: 100vh;
-      border-bottom: 3px dashed black;
       padding-top: 2rem;
       @include flexme;
       flex-flow: column;
@@ -412,7 +409,6 @@
     }
     #contact {
       height: 100vh;
-      border-bottom: 3px dashed black;
       padding-top: 2rem;
       @include flexme;
       flex-flow: column wrap;
@@ -491,7 +487,6 @@
     }
     #blog {
       height: 100vh;
-      border-bottom: 3px dashed black;
       padding-top: 2rem;
       @include flexme;
       flex-flow: column wrap;

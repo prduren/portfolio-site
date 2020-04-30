@@ -69,7 +69,6 @@
 
 * .main-wrap #home {
   height: 100vh;
-  border-bottom: 3px dashed black;
   width: 80%;
   margin: 0 auto;
   background-color: white;
@@ -216,7 +215,6 @@
 
 * .main-wrap #about {
   height: 100vh;
-  border-bottom: 3px dashed black;
   padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,7 +542,6 @@
 
 * .main-wrap #projects {
   height: 100vh;
-  border-bottom: 3px dashed black;
   padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,7 +680,6 @@
 
 * .main-wrap #contact {
   height: 100vh;
-  border-bottom: 3px dashed black;
   padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,7 +816,6 @@
 
 * .main-wrap #blog {
   height: 100vh;
-  border-bottom: 3px dashed black;
   padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
