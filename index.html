@@ -81,11 +81,71 @@
         <div class="project-gallery">
           <img src="./img/bus-big.png" class="gallery-highlight" alt="bus" />
           <div class="project-preview">
-            <img src="./img/bus-small.png" class="project-active" alt="" />
-            <img src="./img/code-small.png" alt="code" />
-            <img src="./img/me-small.png" alt="site" />
-            <img src="./img/me2-small.png" alt="site" />
+            <img
+              onclick="showMe('bus-link','code-link','site-link', 'site2-link', 'bus-p', 'code-p', 'site-p', 'site2-p')"
+              src="./img/bus-small.png"
+              class="project-active bus-pic"
+              alt=""
+            />
+            <img
+              onclick="showMe('code-link','bus-link','site-link', 'site2-link','code-p', 'bus-p', 'site-p', 'site2-p')"
+              src="./img/code-small.png"
+              class="code-pic"
+              alt="code"
+            />
+            <img
+              onclick="showMe('site-link','bus-link','code-link', 'site2-link','site-p', 'code-p', 'bus-p', 'site2-p')"
+              src="./img/me-small.png"
+              class="me-pic"
+              alt="site"
+            />
+            <img
+              onclick="showMe('site2-link','bus-link','site-link', 'code-link','site2-p', 'code-p', 'site-p', 'bus-p')"
+              src="./img/me2-small.png"
+              class="me2-pic"
+              alt="site"
+            />
           </div>
+        </div>
+        <div class="project-link-wrapper">
+          <a
+            target="_blank"
+            id="bus-link"
+            href="https://github.com/prduren/Preprocessing-II"
+            >🔗github</a
+          >
+          <a
+            target="_blank"
+            id="code-link"
+            href="https://github.com/prduren/Sprint-Challenge--User-Interface"
+            >🔗github</a
+          >
+          <a
+            target="_blank"
+            id="site-link"
+            href="https://github.com/prduren/Preprocessing-I"
+            >🔗github</a
+          >
+          <a
+            target="_blank"
+            id="site2-link"
+            href="https://github.com/prduren/User-Interface-II"
+            >🔗github</a
+          >
+          <p id="bus-p">
+            this is a beginning project where I test out the powers of
+            preprocessors!
+          </p>
+          <p id="code-p">
+            a flexbox learning project
+          </p>
+          <p id="site-p">
+            first itteration of an attempt at a portfolio site!
+          </p>
+          <p id="site2-p">
+            another iteration of an attempt at a portfolio site! cotton candy
+            colors, huh?
+          </p>
         </div>
       </div>
       <div id="contact">

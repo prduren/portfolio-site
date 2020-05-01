@@ -67,7 +67,7 @@ function smoothScroll(target, duration) {
 
     requestAnimationFrame(animation);
 }
-// eventListeners for the above function
+// eventListeners for smoothScroll function
 var home1 = document.querySelector('.home1');
 var aboutButton1 = document.querySelector('.about-button1');
 var projectsButton1 = document.querySelector('.projects-button1');
@@ -80,5 +80,16 @@ projectsButton1.addEventListener('click', function(e) {e.preventDefault();smooth
 contactButton1.addEventListener('click', function(e) {e.preventDefault();smoothScroll('#contact', 400);});
 blogButton1.addEventListener('click', function(e) {e.preventDefault();smoothScroll('#blog', 400);});
 
+// show a and p on projects page depending on which image is clicked
 
+function showMe(l1,l2,l3,l4,p1,p2,p3,p4) {
+    document.getElementById(l1).style.display = "block";
+    document.getElementById(l2).style.display = "none";
+    document.getElementById(l3).style.display = "none";
+    document.getElementById(l4).style.display = "none";
+    document.getElementById(p1).style.display = "block";
+    document.getElementById(p2).style.display = "none";
+    document.getElementById(p3).style.display = "none";
+    document.getElementById(p4).style.display = "none";
+  }
 
