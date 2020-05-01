@@ -743,11 +743,39 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 1399px) {
+  * .main-wrap #projects .project-gallery img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  * .main-wrap #projects .project-gallery img {
+    width: 90%;
+    height: auto;
+  }
+}
+
 * .main-wrap #projects .project-gallery .project-preview {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1399px) {
+  * .main-wrap #projects .project-gallery .project-preview {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  * .main-wrap #projects .project-gallery .project-preview {
+    width: 90%;
+    height: auto;
+  }
 }
 
 * .main-wrap #projects .project-gallery .project-preview img {

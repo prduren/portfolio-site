@@ -415,11 +415,27 @@ body {
           width: 100%;
           height: auto;
           cursor: pointer;
+          @media (max-width: 1399px) {
+            width: 70%;
+            height: auto;
+          }
+          @media (max-width: 700px) {
+            width: 90%;
+            height: auto;
+          }
         }
         .project-preview {
           // border: 3px solid #3e3e3e;
           width: 100%;
           display: flex;
+          @media (max-width: 1399px) {
+            width: 70%;
+            height: auto;
+          }
+          @media (max-width: 700px) {
+            width: 90%;
+            height: auto;
+          }
           img {
             width: 25%;
             height: 10rem;
