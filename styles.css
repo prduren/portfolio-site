@@ -759,7 +759,7 @@ body {
 }
 
 * .main-wrap #projects .project-gallery .gallery-highlight {
-  border: 2px dashed seagreen;
+  border: 2px solid seagreen;
   width: 100%;
   height: 100%;
 }
@@ -781,7 +781,7 @@ body {
 
 * .main-wrap #projects .project-gallery .project-preview .project-active {
   opacity: 1;
-  border: 2px dashed seagreen;
+  border: 2px solid #123822;
 }
 
 * .main-wrap #projects .project-link-wrapper {
