@@ -13,14 +13,6 @@
         {
           "name": "D:\\Repos\\park-playground\\portfolio-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
-        },
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "develop",
-          "options": {
-            "plugins": [],
-            "ssr": false
-          }
         }
       ],
       "presets": [
@@ -49,14 +41,6 @@
         {
           "name": "D:\\Repos\\park-playground\\portfolio-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
-        },
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "develop-html",
-          "options": {
-            "plugins": [],
-            "ssr": false
-          }
         }
       ],
       "presets": [
@@ -85,14 +69,6 @@
         {
           "name": "D:\\Repos\\park-playground\\portfolio-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
-        },
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "build-html",
-          "options": {
-            "plugins": [],
-            "ssr": true
-          }
         }
       ],
       "presets": [
@@ -121,14 +97,6 @@
         {
           "name": "D:\\Repos\\park-playground\\portfolio-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
           "options": {}
-        },
-        {
-          "name": "babel-plugin-styled-components",
-          "stage": "build-javascript",
-          "options": {
-            "plugins": [],
-            "ssr": true
-          }
         }
       ],
       "presets": [
