@@ -8,14 +8,26 @@ const StyledPosts = styled.div`
   height: 100%;
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.colors.white};
+  font-size: ${(props) => props.theme.fontSize.med};
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
   }
 `;
 
+const Content = styled.div`
+  margin: 10% 10%;
+  font-size: ${(props) => props.theme.fontSize.med};
+`;
+
 const Posts = () => {
-  return <StyledPosts>posts</StyledPosts>;
+  return (
+    <StyledPosts>
+      <Content>
+        <h2>posts</h2>
+      </Content>
+    </StyledPosts>
+  );
 };
 
 export default Posts;

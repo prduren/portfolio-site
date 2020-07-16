@@ -14,8 +14,21 @@ const StyledMain = styled.div`
   }
 `;
 
+const Content = styled.div`
+  margin: 10% 10%;
+  h1 {
+    font-size: ${(props) => props.theme.fontSize.lrg};
+  }
+`;
+
 const Main = () => {
-  return <StyledMain>main</StyledMain>;
+  return (
+    <StyledMain>
+      <Content>
+        <h1>Parker Duren</h1>
+      </Content>
+    </StyledMain>
+  );
 };
 
 export default Main;

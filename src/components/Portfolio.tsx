@@ -14,8 +14,19 @@ const StyledPortfolio = styled.div`
   }
 `;
 
+const Content = styled.div`
+  margin: 10% 10%;
+  font-size: ${(props) => props.theme.fontSize.med};
+`;
+
 const Portfolio = () => {
-  return <StyledPortfolio>port</StyledPortfolio>;
+  return (
+    <StyledPortfolio>
+      <Content>
+        <h2>Portfolio</h2>
+      </Content>
+    </StyledPortfolio>
+  );
 };
 
 export default Portfolio;
