@@ -1,8 +1,13 @@
-import React from 'react';
-import Wrapper from '../components/Wrapper';
+import React from "react";
+import Wrapper from "../components/Wrapper";
+import Reset from "../layouts/reset.js";
 
 const index = () => {
-  return <Wrapper />;
+  return (
+    <Reset>
+      <Wrapper />
+    </Reset>
+  );
 };
 
 export default index;
