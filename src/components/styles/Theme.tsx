@@ -10,7 +10,10 @@ const theme = {
     brown: "#ddbea8",
     white: "white",
   },
-  fonts: ["sans-serif", "Roboto"],
+  fonts: {
+    hdr: "'Chivo', sans-serif",
+    main: "'Overpass', sans-serif",
+  },
   fontSize: {
     sml: "1.6rem",
     med: "2.5rem",
