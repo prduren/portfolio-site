@@ -11,6 +11,11 @@ const theme = {
     white: "white",
   },
   fonts: ["sans-serif", "Roboto"],
+  fontSize: {
+    sml: "1.6rem",
+    med: "2.5rem",
+    lrg: "5rem",
+  },
 };
 
 const Theme = ({ children }) => (
