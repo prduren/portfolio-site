@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.22",
     "@types/styled-components": "^5.1.1",
     "babel-plugin-styled-components": "^1.10.7",
     "cssnano": "4.1.10",
@@ -50,6 +51,7 @@
     "prismjs": "1.20.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-elastic-carousel": "^0.6.6",
     "react-emotion": "10.0.0",
     "react-helmet": "6.1.0",
     "rehype-react": "6.0.0",
@@ -58,6 +60,7 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "@types/brainhubeu__react-carousel": "^1.15.0",
     "@types/lodash": "4.14.155",
     "@types/node": "14.0.13",
     "@types/react": "16.9.36",

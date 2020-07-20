@@ -15,17 +15,17 @@ declare module "*.module.css" {
   export = cssModule;
 }
 
-declare module "rehype-react" {
-  interface RehypeOptions {
-    createElement: any;
-    components: any;
-  }
-  class RehypeReact {
-    Compiler: any;
-    constructor(options: RehypeOptions);
-  }
-  export default RehypeReact;
-}
+// declare module "rehype-react" {
+//   interface RehypeOptions {
+//     createElement: any;
+//     components: any;
+//   }
+//   class RehypeReact {
+//     Compiler: any;
+//     constructor(options: RehypeOptions);
+//   }
+//   export default RehypeReact;
+// }
 
 declare module "styled-components" {
   export interface ThemeProps<T> {
