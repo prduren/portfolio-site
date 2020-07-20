@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from "./styles/Theme";
 
 const StyledExperience = styled.div`
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -7,10 +8,11 @@ const StyledExperience = styled.div`
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.colors.white};
   margin-bottom: 2rem;
-  @media screen and (max-width: 900px) {
+
+  ${media.greaterThan("sm")`
     grid-column: auto;
     grid-row: auto;
-  }
+  `};
 `;
 
 const Content = styled.div`

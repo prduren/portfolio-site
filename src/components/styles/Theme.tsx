@@ -1,7 +1,44 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { generateMedia } from "styled-media-query";
+import { WrapRootElementBrowserArgs, WrapPageElementBrowserArgs } from "gatsby";
 
-const theme = {
+export const breakpoints = ["360px", "550px", "750px", "1000px", "1300px"];
+const [sm, md, lg] = breakpoints;
+
+export const containerWidths = {
+  sm,
+  md,
+  lg,
+};
+
+export const media = generateMedia<typeof containerWidths, PrdurenTheme>({
+  sm,
+  md,
+  lg,
+});
+
+export interface PrdurenTheme {
+  colors: {
+    purple: string;
+    blue: string;
+    green: string;
+    tan: string;
+    brown: string;
+    white: string;
+  };
+  fonts: {
+    hdr: string;
+    main: string;
+  };
+  fontSize: {
+    sml: string;
+    med: string;
+    lrg: string;
+  };
+}
+
+const theme: PrdurenTheme = {
   colors: {
     purple: "#160f29",
     blue: "#246173",
@@ -21,8 +58,10 @@ const theme = {
   },
 };
 
-const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
-);
-
-export default Theme;
+export function wrapRootElement({ element }: WrapRootElementBrowserArgs) {
+  return (
+    <ThemeProvider theme={theme}>
+      <>{element}</>
+    </ThemeProvider>
+  );
+}
