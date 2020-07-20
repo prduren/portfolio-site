@@ -7,6 +7,9 @@ const StyledPosts = styled.div`
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.colors.white};
   font-size: ${(props) => props.theme.fontSize.med};
+  h2 {
+    font-family: ${(props) => props.theme.fonts.hdr};
+  }
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;

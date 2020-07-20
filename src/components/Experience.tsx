@@ -8,7 +8,9 @@ const StyledExperience = styled.div`
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.colors.white};
   margin-bottom: 2rem;
-
+  h2 {
+    font-family: ${(props) => props.theme.fonts.hdr};
+  }
   ${media.greaterThan("sm")`
     grid-column: auto;
     grid-row: auto;
