@@ -15,6 +15,7 @@ function PortCard() {
   return (
     <StyledCard>
       <img src="https://picsum.photos/300/200" alt="placeholder" />
+      <h5>A Title</h5>
       <p>this is a project that I need to add some text for</p>
       <a href="https://github.com" target="_blank" rel="noopener noreferrer">
         source code

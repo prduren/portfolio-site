@@ -15,10 +15,12 @@ function PostCard() {
   return (
     <StyledCard>
       <img src="https://picsum.photos/300/200" alt="placeholder" />
-      <p>a post</p>
+      <h5>A Title</h5>
+      <p>this is a description of the post</p>
       <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-        source code
+        go
       </a>
+      {"  ///"}
     </StyledCard>
   );
 }
