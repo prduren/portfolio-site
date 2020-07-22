@@ -11,10 +11,10 @@ const StyledExperience = styled.div`
   h2 {
     font-family: ${(props) => props.theme.fonts.hdr};
   }
-  ${media.greaterThan("sm")`
+  @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
-  `};
+  }
 `;
 
 const Content = styled.div`

@@ -13,9 +13,8 @@ const StyledWrapper = styled.div`
   grid-gap: 10px;
   margin: 2rem auto;
   @media screen and (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
   }
 `;
 
