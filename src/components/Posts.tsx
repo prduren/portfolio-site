@@ -15,6 +15,7 @@ const StyledPosts = styled.div`
     font-family: ${(props) => props.theme.fonts.hdr};
     text-decoration: underline;
     text-decoration-style: wavy;
+    margin-bottom: 1rem;
   }
   @media screen and (max-width: 900px) {
     grid-column: auto;
@@ -27,6 +28,7 @@ const Content = styled.div`
   font-size: ${(props) => props.theme.fontSize.med};
   .BrainhubCarousel__arrows {
     background-color: ${(props) => props.theme.colors.blue};
+    margin: 0.5rem;
     &:hover {
       background-color: ${(props) => props.theme.colors.green};
     }
