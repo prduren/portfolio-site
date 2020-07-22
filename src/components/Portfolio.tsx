@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
+import PortCard from "./PortCard";
 
 const StyledPortfolio = styled.div`
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -22,7 +23,6 @@ const StyledPortfolio = styled.div`
 const Content = styled.div`
   margin: 10% 10%;
   font-size: ${(props) => props.theme.fontSize.med};
-
   .carousel-wrapper {
     width: 100%;
   }
@@ -34,10 +34,10 @@ const Portfolio = () => {
       <Content>
         <h2>Portfolio</h2>
         <div className="carousel-wrapper">
-          <Carousel arrows dots>
-            <img src="https://www.placecage.com/200/300" alt="" />
-            <img src="https://www.placecage.com/200/300" alt="" />
-            <img src="https://www.placecage.com/200/300" alt="" />
+          <Carousel arrows infinite>
+            <PortCard />
+            <PortCard />
+            <PortCard />
           </Carousel>
         </div>
       </Content>
