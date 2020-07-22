@@ -29,6 +29,9 @@ const StyledPortfolio = styled.div`
 const Content = styled.div`
   margin: 5% 5%;
   font-size: ${(props) => props.theme.fontSize.med};
+  .BrainhubCarousel__arrowLeft {
+    display: none;
+  }
   .BrainhubCarousel__arrows {
     background-color: ${(props) => props.theme.colors.blue};
     margin: 0.5rem;

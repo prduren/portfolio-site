@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
+import Carousel from "@brainhubeu/react-carousel";
 import PostCard from "./PostCard";
 
 const StyledPosts = styled.div`
@@ -29,6 +29,9 @@ const StyledPosts = styled.div`
 const Content = styled.div`
   margin: 5% 5%;
   font-size: ${(props) => props.theme.fontSize.med};
+  .BrainhubCarousel__arrowLeft {
+    display: none;
+  }
   .BrainhubCarousel__arrows {
     background-color: ${(props) => props.theme.colors.blue};
     margin: 0.5rem;
