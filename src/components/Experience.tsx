@@ -27,11 +27,22 @@ const Content = styled.div`
   font-size: ${(props) => props.theme.fontSize.med};
 `;
 
+const StyledIcons = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+`;
+
+const Icons = () => {
+  return <StyledIcons></StyledIcons>;
+};
+
 const Experience = () => {
   return (
     <StyledExperience>
       <Content>
         <h2>Experience</h2>
+        <img src="../icons/js.png" alt="" />
+        <Icons />
       </Content>
     </StyledExperience>
   );
