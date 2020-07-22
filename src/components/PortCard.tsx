@@ -14,12 +14,12 @@ const StyledCard = styled.div`
 function PortCard() {
   return (
     <StyledCard>
-      <img src="https://picsum.photos/200/300" alt="placeholder" />
+      <img src="https://picsum.photos/300/200" alt="placeholder" />
       <p>this is a project that I need to add some text for</p>
       <a href="https://github.com" target="_blank" rel="noopener noreferrer">
         source code
       </a>
-      ///
+      {"  ///  "}
       <a href="https://github.com" target="_blank" rel="noopener noreferrer">
         live
       </a>

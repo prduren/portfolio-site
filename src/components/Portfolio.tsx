@@ -10,9 +10,11 @@ const StyledPortfolio = styled.div`
   border-radius: 0.8rem;
   margin-top: 2rem;
   width: 100%;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.tan};
   h2 {
     font-family: ${(props) => props.theme.fonts.hdr};
+    text-decoration: underline;
+    text-decoration-style: wavy;
   }
   @media screen and (max-width: 900px) {
     grid-column: auto;
@@ -21,10 +23,13 @@ const StyledPortfolio = styled.div`
 `;
 
 const Content = styled.div`
-  margin: 10% 10%;
+  margin: 5% 5%;
   font-size: ${(props) => props.theme.fontSize.med};
-  .carousel-wrapper {
-    width: 100%;
+  .BrainhubCarousel__arrows {
+    background-color: ${(props) => props.theme.colors.blue};
+    &:hover {
+      background-color: ${(props) => props.theme.colors.green};
+    }
   }
 `;
 
