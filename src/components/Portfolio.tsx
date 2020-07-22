@@ -9,6 +9,8 @@ const StyledPortfolio = styled.div`
   grid-column: 2 / span 2;
   border-radius: 0.8rem;
   margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 100%;
   background-color: ${(props) => props.theme.colors.tan};
   h2 {
@@ -20,6 +22,7 @@ const StyledPortfolio = styled.div`
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
+    width: auto;
   }
 `;
 

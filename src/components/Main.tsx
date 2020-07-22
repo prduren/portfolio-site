@@ -14,6 +14,7 @@ const StyledMain = styled.div`
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
+    height: auto;
   }
 `;
 

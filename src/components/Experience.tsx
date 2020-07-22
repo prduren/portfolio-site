@@ -8,6 +8,8 @@ const StyledExperience = styled.div`
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.colors.tan};
   margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   h2 {
     font-family: ${(props) => props.theme.fonts.hdr};
     text-decoration: underline;
@@ -16,6 +18,7 @@ const StyledExperience = styled.div`
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
+    width: auto;
   }
 `;
 

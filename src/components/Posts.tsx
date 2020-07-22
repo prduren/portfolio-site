@@ -11,6 +11,8 @@ const StyledPosts = styled.div`
   width: 100%;
   background-color: ${(props) => props.theme.colors.tan};
   font-size: ${(props) => props.theme.fontSize.med};
+  margin-left: 2rem;
+  margin-right: 2rem;
   h2 {
     font-family: ${(props) => props.theme.fonts.hdr};
     text-decoration: underline;
@@ -20,6 +22,7 @@ const StyledPosts = styled.div`
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
+    width: auto;
   }
 `;
 
