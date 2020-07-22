@@ -9,11 +9,12 @@ const StyledMain = styled.div`
   grid-row: 1 / span 3;
   margin: 2rem 2rem;
   border-radius: 0.8rem;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.tan};
   height: 90%;
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
+    height: auto;
   }
 `;
 

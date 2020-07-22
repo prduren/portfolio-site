@@ -43,7 +43,7 @@ const theme: PrdurenTheme = {
     purple: "#160f29",
     blue: "#246173",
     green: "#368f8b",
-    tan: "#f3dfc1",
+    tan: "#faf1e3",
     brown: "#ddbea8",
     white: "white",
   },
