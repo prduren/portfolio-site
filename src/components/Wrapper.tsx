@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Portfolio from "./Portfolio";
-import Main from "./Main";
-import Posts from "./Posts";
-import Experience from "./Experience";
+import React from 'react';
+import styled from 'styled-components';
+import Portfolio from './Portfolio';
+import Main from './Main';
+import Posts from './Posts';
+import Experience from './Experience';
 
 const StyledWrapper = styled.div`
   display: grid;
