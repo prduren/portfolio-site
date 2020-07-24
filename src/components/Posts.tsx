@@ -50,10 +50,10 @@ const Content = styled.div`
     display: none;
   }
   .BrainhubCarousel__arrows {
-    background-color: ${(props) => props.theme.colors.blue};
+    background-color: ${(props) => props.theme.colors.purple};
     margin: 0.5rem;
     &:hover {
-      background-color: ${(props) => props.theme.colors.green};
+      background-color: #49425c;
     }
   }
 `;
