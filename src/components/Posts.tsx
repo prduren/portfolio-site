@@ -13,11 +13,23 @@ const StyledPosts = styled.div`
   font-size: ${(props) => props.theme.fontSize.med};
   margin-left: 2rem;
   margin-right: 2rem;
-  h2 {
-    font-family: ${(props) => props.theme.fonts.hdr};
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    margin-bottom: 1rem;
+  .header-div {
+    h2 {
+      font-family: ${(props) => props.theme.fonts.hdr};
+      margin-bottom: 1rem;
+    }
+    .underline {
+      height: 4px;
+      width: 20rem;
+      background-color: black;
+      margin-bottom: 2rem;
+      transform: skew(-30deg);
+      background: linear-gradient(
+        to right,
+        ${(props) => props.theme.colors.brown},
+        ${(props) => props.theme.colors.green}
+      );
+    }
   }
   @media screen and (max-width: 900px) {
     grid-column: auto;
@@ -45,7 +57,10 @@ const Posts = () => {
   return (
     <StyledPosts>
       <Content>
-        <h2>Posts</h2>
+        <div className="header-div">
+          <h2>Posts</h2>
+          <div className="underline"></div>
+        </div>
         <Carousel infinite arrows>
           <PostCard />
           <PostCard />

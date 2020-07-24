@@ -25,10 +25,23 @@ const StyledExperience = styled.div`
   margin-bottom: 2rem;
   margin-right: 2rem;
   margin-left: 2rem;
-  h2 {
-    font-family: ${(props) => props.theme.fonts.hdr};
-    text-decoration: underline;
-    text-decoration-style: wavy;
+  .header-div {
+    h2 {
+      font-family: ${(props) => props.theme.fonts.hdr};
+      margin-bottom: 1rem;
+    }
+    .underline {
+      height: 4px;
+      width: 20rem;
+      background-color: black;
+      margin-bottom: 2rem;
+      transform: skew(-30deg);
+      background: linear-gradient(
+        to right,
+        ${(props) => props.theme.colors.brown},
+        ${(props) => props.theme.colors.green}
+      );
+    }
   }
   @media screen and (max-width: 900px) {
     grid-column: auto;
@@ -38,7 +51,7 @@ const StyledExperience = styled.div`
 `;
 
 const Content = styled.div`
-  margin: 10% 10%;
+  margin: 5% 5%;
   font-size: ${(props) => props.theme.fontSize.med};
 `;
 
@@ -75,7 +88,10 @@ const Experience = () => {
   return (
     <StyledExperience>
       <Content>
-        <h2>Experience</h2>
+        <div className="header-div">
+          <h2>Experience</h2>
+          <div className="underline"></div>
+        </div>
         <img src="../icons/js.png" alt="" />
         <Icons />
       </Content>

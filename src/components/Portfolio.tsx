@@ -13,12 +13,25 @@ const StyledPortfolio = styled.div`
   margin-right: 2rem;
   width: 100%;
   background-color: ${(props) => props.theme.colors.tan};
-  h2 {
-    font-family: ${(props) => props.theme.fonts.hdr};
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    margin-bottom: 1rem;
+  .header-div {
+    h2 {
+      font-family: ${(props) => props.theme.fonts.hdr};
+      margin-bottom: 1rem;
+    }
+    .underline {
+      height: 4px;
+      width: 20rem;
+      background-color: black;
+      margin-bottom: 2rem;
+      transform: skew(-30deg);
+      background: linear-gradient(
+        to right,
+        ${(props) => props.theme.colors.brown},
+        ${(props) => props.theme.colors.green}
+      );
+    }
   }
+
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
@@ -45,7 +58,10 @@ const Portfolio = () => {
   return (
     <StyledPortfolio>
       <Content>
-        <h2>Portfolio</h2>
+        <div className="header-div">
+          <h2>Portfolio</h2>
+          <div className="underline"></div>
+        </div>
         <div className="carousel-wrapper">
           <Carousel arrows infinite>
             <PortCard />
