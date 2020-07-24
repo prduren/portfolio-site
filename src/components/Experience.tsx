@@ -25,6 +25,7 @@ const StyledExperience = styled.div`
   margin-bottom: 2rem;
   margin-right: 2rem;
   margin-left: 2rem;
+  width: 100%;
   .header-div {
     h2 {
       font-family: ${(props) => props.theme.fonts.hdr};
