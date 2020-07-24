@@ -27,6 +27,11 @@ const StyledCard = styled.div`
     font-size: ${(props) => props.theme.fontSize.sml};
     width: 100%;
     line-height: 2.5rem;
+    margin-left: 1rem;
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
   }
   @media screen and (max-width: 1300px) {
     width: 80%;
@@ -36,17 +41,20 @@ const StyledCard = styled.div`
 function PortCard() {
   return (
     <StyledCard>
-      <h5>
-        <strong>A Title</strong>
-      </h5>
-      <p>this is a project that I need to add some text for</p>
-      <img src="https://picsum.photos/300/200" alt="placeholder" />
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-        // source code
-      </a>
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-        // live
-      </a>
+      <div>
+        <h5>
+          <strong>A Title</strong>
+        </h5>
+        <p>this is a project that I need to add some text for</p>
+        <img src="https://picsum.photos/300/200" alt="placeholder" />
+        <div className="break"></div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          // source code
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          // live
+        </a>
+      </div>
     </StyledCard>
   );
 }
