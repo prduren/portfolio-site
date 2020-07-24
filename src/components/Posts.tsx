@@ -21,14 +21,28 @@ const StyledPosts = styled.div`
     .underline {
       height: 4px;
       width: 20rem;
-      background-color: black;
       margin-bottom: 2rem;
       transform: skew(-30deg);
-      background: linear-gradient(
+      background: linear-gradient(-45deg, #368f8b, #ddbea8,#246173, #ddbea8);
+	    background-size: 400% 400%;
+	    animation: gradient 5s ease infinite;
+      @keyframes gradient {
+    	0% {
+	    	background-position: 0% 50%;
+	    }
+    	50% {
+	    	background-position: 100% 50%;
+    	}
+    	100% {
+     	  background-position: 0% 50%;
+    	}
+}
+      /* background: linear-gradient(
         to right,
         ${(props) => props.theme.colors.brown},
         ${(props) => props.theme.colors.green}
-      );
+      ); */
+
     }
   }
   @media screen and (max-width: 900px) {

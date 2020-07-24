@@ -37,11 +37,19 @@ const Content = styled.div`
     transform: skew(-30deg);
     border: none;
     float: left;
-    background: linear-gradient(
-      to right,
-      ${(props) => props.theme.colors.brown},
-      ${(props) => props.theme.colors.purple}
-    );
+    background: linear-gradient(-45deg, #160f29, #ddbea8,#160f29, #ddbea8);
+	    background-size: 400% 400%;
+	    animation: gradient 5s ease infinite;
+      @keyframes gradient {
+    	0% {
+	    	background-position: 0% 50%;
+	    }
+    	50% {
+	    	background-position: 100% 50%;
+    	}
+    	100% {
+     	  background-position: 0% 50%;
+    	}
   }
 `;
 
