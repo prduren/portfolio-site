@@ -31,6 +31,18 @@ const Content = styled.div`
     margin-bottom: 5rem;
     line-height: 4rem;
   }
+  hr {
+    height: 5px;
+    width: 90%;
+    transform: skew(-30deg);
+    border: none;
+    float: left;
+    background: linear-gradient(
+      to right,
+      ${(props) => props.theme.colors.brown},
+      ${(props) => props.theme.colors.purple}
+    );
+  }
 `;
 
 const Main = () => {
@@ -38,11 +50,17 @@ const Main = () => {
     <StyledMain>
       <Content>
         <h1>Parker Duren</h1>
+        <hr />
+        <br />
         <p>
           I'm a developer with 4 years of experience creating crisp & clean
           websites & applications.
         </p>
-        <p>I 💜 JavaSript, language, humans, & ferrets. </p>
+        <hr />
+        <br />
+        <p>I love JavaSript, language, humans, ferrets, and Japanese stuff. </p>
+        <hr />
+        <br />
         <MainLinks />
       </Content>
     </StyledMain>
