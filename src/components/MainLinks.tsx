@@ -4,8 +4,6 @@ import styled from "styled-components";
 const StyledMainLinks = styled.div`
   bottom: 4rem;
   left: 4rem;
-  position: absolute;
-  float: bottom;
   width: 30%;
   height: 5rem;
   display: flex;

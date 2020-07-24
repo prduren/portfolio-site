@@ -10,7 +10,7 @@ const StyledMain = styled.div`
   margin: 2rem 2rem;
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.colors.tan};
-  height: 90%;
+  height: 90vh;
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
@@ -28,7 +28,7 @@ const Content = styled.div`
   }
   p {
     margin-top: 4rem;
-    margin-bottom: 20rem;
+    margin-bottom: 5rem;
     line-height: 4rem;
   }
 `;

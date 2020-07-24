@@ -1,6 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { media } from "./styles/Theme";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faJsSquare,
+  faReact,
+  faCss3,
+  faHtml5,
+  faGit,
+  faGithub,
+  faFirefoxBrowser,
+  faChrome,
+  faLess,
+  faSass,
+  faStripe,
+  faWindows,
+} from "@fortawesome/free-brands-svg-icons";
 
 const StyledExperience = styled.div`
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -30,10 +45,30 @@ const Content = styled.div`
 const StyledIcons = styled.div`
   display: flex;
   flex-flow: row wrap;
+  gap: 2rem;
+  .item {
+    height: auto;
+    width: 3rem;
+  }
 `;
 
 const Icons = () => {
-  return <StyledIcons></StyledIcons>;
+  return (
+    <StyledIcons>
+      <FontAwesomeIcon className="item" icon={faJsSquare} />
+      <FontAwesomeIcon className="item" icon={faReact} />
+      <FontAwesomeIcon className="item" icon={faCss3} />
+      <FontAwesomeIcon className="item" icon={faHtml5} />
+      <FontAwesomeIcon className="item" icon={faGit} />
+      <FontAwesomeIcon className="item" icon={faGithub} />
+      <FontAwesomeIcon className="item" icon={faFirefoxBrowser} />
+      <FontAwesomeIcon className="item" icon={faChrome} />
+      <FontAwesomeIcon className="item" icon={faWindows} />
+      <FontAwesomeIcon className="item" icon={faStripe} />
+      <FontAwesomeIcon className="item" icon={faSass} />
+      <FontAwesomeIcon className="item" icon={faLess} />
+    </StyledIcons>
+  );
 };
 
 const Experience = () => {
