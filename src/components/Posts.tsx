@@ -41,6 +41,11 @@ const StyledPosts = styled.div`
 const Content = styled.div`
   margin: 5% 5%;
   font-size: ${(props) => props.theme.fontSize.med};
+  p,
+  h5,
+  a {
+    font-family: ${(props) => props.theme.fonts.main};
+  }
   .BrainhubCarousel__arrowLeft {
     display: none;
   }
