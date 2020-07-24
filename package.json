@@ -17,6 +17,10 @@
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.22",
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@types/styled-components": "^5.1.1",
     "babel-plugin-styled-components": "^1.10.7",
     "cssnano": "4.1.10",

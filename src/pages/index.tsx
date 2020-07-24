@@ -5,7 +5,7 @@ import WebFont from "webfontloader";
 
 WebFont.load({
   google: {
-    families: ["Chivo", "sans-serif"],
+    families: ["Chivo", "Overpass"],
   },
 });
 

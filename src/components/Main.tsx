@@ -10,7 +10,7 @@ const StyledMain = styled.div`
   margin: 2rem 2rem;
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.colors.tan};
-  height: 90%;
+  height: 90vh;
   @media screen and (max-width: 900px) {
     grid-column: auto;
     grid-row: auto;
@@ -28,8 +28,28 @@ const Content = styled.div`
   }
   p {
     margin-top: 4rem;
-    margin-bottom: 20rem;
+    margin-bottom: 5rem;
     line-height: 4rem;
+  }
+  hr {
+    height: 5px;
+    width: 90%;
+    transform: skew(-30deg);
+    border: none;
+    float: left;
+    background: linear-gradient(-45deg, #160f29, #ddbea8,#160f29, #ddbea8);
+	    background-size: 400% 400%;
+	    animation: gradient 5s ease infinite;
+      @keyframes gradient {
+    	0% {
+	    	background-position: 0% 50%;
+	    }
+    	50% {
+	    	background-position: 100% 50%;
+    	}
+    	100% {
+     	  background-position: 0% 50%;
+    	}
   }
 `;
 
@@ -38,11 +58,17 @@ const Main = () => {
     <StyledMain>
       <Content>
         <h1>Parker Duren</h1>
+        <hr />
+        <br />
         <p>
           I'm a developer with 4 years of experience creating crisp & clean
           websites & applications.
         </p>
-        <p>I 💜 JavaSript, language, humans, & ferrets. </p>
+        <hr />
+        <br />
+        <p>I love JavaSript, language, humans, ferrets, and Japanese stuff. </p>
+        <hr />
+        <br />
         <MainLinks />
       </Content>
     </StyledMain>

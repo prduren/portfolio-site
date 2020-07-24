@@ -13,11 +13,31 @@ const StyledPosts = styled.div`
   font-size: ${(props) => props.theme.fontSize.med};
   margin-left: 2rem;
   margin-right: 2rem;
-  h2 {
-    font-family: ${(props) => props.theme.fonts.hdr};
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    margin-bottom: 1rem;
+  .header-div {
+    h2 {
+      font-family: ${(props) => props.theme.fonts.hdr};
+      margin-bottom: 1rem;
+    }
+    .underline {
+      height: 4px;
+      width: 20rem;
+      margin-bottom: 2rem;
+      transform: skew(-30deg);
+      background: linear-gradient(-45deg, #368f8b, #ddbea8, #246173, #ddbea8);
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    }
   }
   @media screen and (max-width: 900px) {
     grid-column: auto;
@@ -29,14 +49,19 @@ const StyledPosts = styled.div`
 const Content = styled.div`
   margin: 5% 5%;
   font-size: ${(props) => props.theme.fontSize.med};
+  p,
+  h5,
+  a {
+    font-family: ${(props) => props.theme.fonts.main};
+  }
   .BrainhubCarousel__arrowLeft {
     display: none;
   }
   .BrainhubCarousel__arrows {
-    background-color: ${(props) => props.theme.colors.blue};
+    background-color: ${(props) => props.theme.colors.purple};
     margin: 0.5rem;
     &:hover {
-      background-color: ${(props) => props.theme.colors.green};
+      background-color: #49425c;
     }
   }
 `;
@@ -45,7 +70,10 @@ const Posts = () => {
   return (
     <StyledPosts>
       <Content>
-        <h2>Posts</h2>
+        <div className="header-div">
+          <h2>Posts</h2>
+          <div className="underline"></div>
+        </div>
         <Carousel infinite arrows>
           <PostCard />
           <PostCard />

@@ -8,7 +8,7 @@ import Experience from "./Experience";
 const StyledWrapper = styled.div`
   display: grid;
   width: 95vw;
-  height: 95vh;
+  height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   margin: 2rem auto;

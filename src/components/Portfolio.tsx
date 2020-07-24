@@ -13,11 +13,31 @@ const StyledPortfolio = styled.div`
   margin-right: 2rem;
   width: 100%;
   background-color: ${(props) => props.theme.colors.tan};
-  h2 {
-    font-family: ${(props) => props.theme.fonts.hdr};
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    margin-bottom: 1rem;
+  .header-div {
+    h2 {
+      font-family: ${(props) => props.theme.fonts.hdr};
+      margin-bottom: 1rem;
+    }
+    .underline {
+      height: 4px;
+      width: 20rem;
+      margin-bottom: 2rem;
+      transform: skew(-30deg);
+      background: linear-gradient(-45deg, #368f8b, #ddbea8, #246173, #ddbea8);
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    }
   }
   @media screen and (max-width: 900px) {
     grid-column: auto;
@@ -29,6 +49,11 @@ const StyledPortfolio = styled.div`
 const Content = styled.div`
   margin: 5% 5%;
   font-size: ${(props) => props.theme.fontSize.med};
+  p,
+  h5,
+  a {
+    font-family: ${(props) => props.theme.fonts.main};
+  }
   .BrainhubCarousel__arrowLeft {
     display: none;
   }
@@ -45,7 +70,10 @@ const Portfolio = () => {
   return (
     <StyledPortfolio>
       <Content>
-        <h2>Portfolio</h2>
+        <div className="header-div">
+          <h2>Portfolio</h2>
+          <div className="underline"></div>
+        </div>
         <div className="carousel-wrapper">
           <Carousel arrows infinite>
             <PortCard />
