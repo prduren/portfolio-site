@@ -1,20 +1,18 @@
-import React from "react";
-import Wrapper from "../components/Wrapper";
-import Reset from "../layouts/reset.js";
-import WebFont from "webfontloader";
+import React from 'react';
+import Wrapper from '../components/Wrapper';
+import Reset from '../layouts/reset';
+import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ["Chivo", "Overpass"],
+    families: ['Chivo', 'Overpass'],
   },
 });
 
 const index = () => {
   return (
     <Reset>
-      <>
-        <Wrapper />
-      </>
+      <Wrapper />
     </Reset>
   );
 };
