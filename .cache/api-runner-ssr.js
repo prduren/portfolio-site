@@ -1,4 +1,10 @@
 var plugins = [{
+      plugin: require('D:/Repos/park-playground/portfolio-site/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('D:/Repos/park-playground/portfolio-site/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('D:/Repos/park-playground/portfolio-site/gatsby-ssr'),
       options: {"plugins":[]},
     }]

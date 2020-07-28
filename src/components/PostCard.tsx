@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMedium } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMedium } from '@fortawesome/free-brands-svg-icons';
 
 const StyledCard = styled.div`
-  font-size: ${(props) => props.theme.fontSize.med};
+  font-size: ${props => props.theme.fontSize.med};
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -15,8 +15,8 @@ const StyledCard = styled.div`
   }
   a {
     text-decoration: none;
-    color: ${(props) => props.theme.colors.purple};
-    font-size: ${(props) => props.theme.fontSize.sml};
+    color: ${props => props.theme.colors.purple};
+    font-size: ${props => props.theme.fontSize.sml};
   }
   h5 {
     float: left;
@@ -24,7 +24,7 @@ const StyledCard = styled.div`
   }
   p {
     float: left;
-    font-size: ${(props) => props.theme.fontSize.sml};
+    font-size: ${props => props.theme.fontSize.sml};
     width: 100%;
   }
   .item {
@@ -42,7 +42,7 @@ const StyledCard = styled.div`
   }
 `;
 
-function PostCard() {
+const PostCard = () => {
   return (
     <StyledCard>
       <div>
@@ -51,13 +51,13 @@ function PostCard() {
         </h5>
         <p>this is a description of the post</p>
         <img src="https://picsum.photos/300/200" alt="placeholder" />
-        <div className="break"></div>
+        <div className="break" />
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon className="item" icon={faMedium} />
         </a>
       </div>
     </StyledCard>
   );
-}
+};
 
 export default PostCard;

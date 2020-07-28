@@ -1,11 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledCard = styled.div`
-  font-size: ${(props) => props.theme.fontSize.med};
+  font-size: ${props => props.theme.fontSize.med};
   display: flex;
   flex-flow: row wrap;
-  /* text-align: center; */
   justify-content: center;
   width: 40%;
   img {
@@ -18,13 +17,13 @@ const StyledCard = styled.div`
     float: left;
   }
   p {
-    font-size: ${(props) => props.theme.fontSize.sml};
+    font-size: ${props => props.theme.fontSize.sml};
   }
 
   a {
     text-decoration: none;
-    color: ${(props) => props.theme.colors.purple};
-    font-size: ${(props) => props.theme.fontSize.sml};
+    color: ${props => props.theme.colors.purple};
+    font-size: ${props => props.theme.fontSize.sml};
     width: 100%;
     line-height: 2.5rem;
     margin-left: 1rem;
@@ -38,7 +37,7 @@ const StyledCard = styled.div`
   }
 `;
 
-function PortCard() {
+const PortCard = () => {
   return (
     <StyledCard>
       <div>
@@ -47,16 +46,16 @@ function PortCard() {
         </h5>
         <p>this is a project that I need to add some text for</p>
         <img src="https://picsum.photos/300/200" alt="placeholder" />
-        <div className="break"></div>
+        <div className="break" />
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          // source code
+          / source code
         </a>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          // live
+          / live
         </a>
       </div>
     </StyledCard>
   );
-}
+};
 
 export default PortCard;
