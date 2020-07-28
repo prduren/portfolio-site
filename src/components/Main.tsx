@@ -1,21 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MainLinks from './MainLinks';
-import { keyframes } from 'styled-components';
-
-const fancyHr = keyframes`
-   @keyframes gradient {
-    	0% {
-	    	background-position: 0% 50%;
-	    }
-    	50% {
-	    	background-position: 100% 50%;
-    	}
-    	100% {
-     	  background-position: 0% 50%;
-    	}
-  }
-`;
+import { fancyHr } from './styles/Keyframes';
 
 const StyledMain = styled.aside`
   position: sticky;
@@ -28,6 +14,7 @@ const StyledMain = styled.aside`
   background-color: ${props => props.theme.colors.tan};
   height: 90vh;
   @media screen and (max-width: 900px) {
+    position: static;
     grid-column: auto;
     grid-row: auto;
     height: auto;
@@ -56,7 +43,7 @@ const Content = styled.div`
     float: left;
     background: linear-gradient(-45deg, #160f29, #ddbea8, #160f29, #ddbea8);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 10s ease infinite;
   }
 `;
 

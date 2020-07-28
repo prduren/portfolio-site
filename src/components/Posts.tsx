@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import '@brainhubeu/react-carousel/lib/style.css';
 import Carousel from '@brainhubeu/react-carousel';
 import PostCard from './PostCard';
+import { fancyHr } from './styles/Keyframes';
 
 const StyledPosts = styled.div`
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -25,18 +26,7 @@ const StyledPosts = styled.div`
       transform: skew(-30deg);
       background: linear-gradient(-45deg, #368f8b, #ddbea8, #246173, #ddbea8);
       background-size: 400% 400%;
-      animation: gradient 5s ease infinite;
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
+      animation: gradient 5s ease infinite, ${fancyHr};
     }
   }
   @media screen and (max-width: 900px) {
