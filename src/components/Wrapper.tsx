@@ -6,6 +6,7 @@ import Posts from './Posts';
 import Experience from './Experience';
 
 const StyledWrapper = styled.div`
+  position: relative;
   display: grid;
   width: 95vw;
   height: 100%;
