@@ -6,18 +6,19 @@ import { fancyHr } from './styles/Keyframes';
 const StyledMain = styled.aside`
   position: sticky;
   top: 0;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   grid-column: 1;
   grid-row: 1 / span 3;
-  margin: 2rem 2rem;
-  border-radius: 0.8rem;
-  background-color: ${props => props.theme.colors.tan};
+  margin: 0rem 2rem;
   height: 90vh;
   @media screen and (max-width: 900px) {
+    margin-top: 2rem;
     position: static;
     grid-column: auto;
     grid-row: auto;
     height: auto;
+    border-radius: 0.8rem;
+    background-color: ${props => props.theme.colors.tan};
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   }
   animation: ${fancyHr};
 `;

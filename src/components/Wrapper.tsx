@@ -11,8 +11,8 @@ const StyledWrapper = styled.div`
   width: 95vw;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  margin: 2rem auto;
+  grid-gap: 0px;
+  margin: auto;
   @media screen and (max-width: 900px) {
     grid-template-columns: 100%;
     grid-template-rows: 100%;

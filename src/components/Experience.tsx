@@ -18,11 +18,8 @@ import {
 import { fancyHr } from './styles/Keyframes';
 
 const StyledExperience = styled.div`
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   grid-column: 2 / span 2;
-  border-radius: 0.8rem;
   background-color: ${props => props.theme.colors.tan};
-  margin-bottom: 2rem;
   margin-right: 2rem;
   margin-left: 2rem;
   width: 100%;
@@ -45,6 +42,9 @@ const StyledExperience = styled.div`
     grid-column: auto;
     grid-row: auto;
     width: auto;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    margin-bottom: 2rem;
   }
 `;
 

@@ -6,9 +6,7 @@ import PostCard from './PostCard';
 import { fancyHr } from './styles/Keyframes';
 
 const StyledPosts = styled.div`
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   grid-column: 2 / span 2;
-  border-radius: 0.8rem;
   width: 100%;
   background-color: ${props => props.theme.colors.tan};
   font-size: ${props => props.theme.fontSize.med};
@@ -33,6 +31,9 @@ const StyledPosts = styled.div`
     grid-column: auto;
     grid-row: auto;
     width: auto;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    margin: 2rem 2rem;
   }
 `;
 

@@ -6,10 +6,7 @@ import PortCard from './PortCard';
 import { fancyHr } from './styles/Keyframes';
 
 const StyledPortfolio = styled.div`
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   grid-column: 2 / span 2;
-  border-radius: 0.8rem;
-  margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
   width: 100%;
@@ -33,6 +30,9 @@ const StyledPortfolio = styled.div`
     grid-column: auto;
     grid-row: auto;
     width: auto;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   }
 `;
 
@@ -66,7 +66,13 @@ const Portfolio = () => {
         </div>
         <div className="carousel-wrapper">
           <Carousel arrows infinite>
-            <PortCard />
+            <PortCard
+              title="YES"
+              pText="THE PROPS WORKED"
+              image="https://via.placeholder.com/150"
+              sc="https://github/.com"
+              live="https://github.com"
+            />
             <PortCard />
             <PortCard />
           </Carousel>
