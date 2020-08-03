@@ -1,16 +1,16 @@
-import { PrdurenTheme } from "./components/styles/Theme";
+import { PrdurenTheme } from './components/styles/Theme';
 interface CSSModule {
   [className: string]: string;
 }
 
 // type shims for CSS modules
 
-declare module "*.module.scss" {
+declare module '*.module.scss' {
   const cssModule: CSSModule;
   export = cssModule;
 }
 
-declare module "*.module.css" {
+declare module '*.module.css' {
   const cssModule: CSSModule;
   export = cssModule;
 }
@@ -27,14 +27,14 @@ declare module "*.module.css" {
 //   export default RehypeReact;
 // }
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface ThemeProps<T> {
     theme: T;
   }
 
   export interface DefaultTheme extends PrdurenTheme {}
 }
-declare module "react" {
+declare module 'react' {
   interface Attributes {
     css?: any;
   }
