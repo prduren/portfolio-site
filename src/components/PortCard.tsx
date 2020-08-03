@@ -37,20 +37,28 @@ const StyledCard = styled.div`
   }
 `;
 
-const PortCard = () => {
+export interface PortCardProps {
+  title: string;
+  pText: string;
+  image: string;
+  sc: string;
+  live: string;
+}
+
+const PortCard: React.FC<PortCardProps> = props => {
   return (
     <StyledCard>
       <div>
         <h5>
-          <strong>A Title</strong>
+          <strong>{props.title}</strong>
         </h5>
-        <p>this is a project that I need to add some text for</p>
-        <img src="https://picsum.photos/300/200" alt="placeholder" />
+        <p>{props.pText}</p>
+        <img src={props.image} alt="placeholder" />
         <div className="break" />
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href={props.sc} target="_blank" rel="noopener noreferrer">
           / source code
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href={props.live} target="_blank" rel="noopener noreferrer">
           / live
         </a>
       </div>

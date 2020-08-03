@@ -2,8 +2,26 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import PortCard from './PortCard';
+import PortCard, { PortCardProps } from './PortCard';
 import { fancyHr } from './styles/Keyframes';
+import { graphql, useStaticQuery } from 'gatsby';
+import { AllProjectsQuery } from '../queries';
+
+// const projectsQuery = graphql`
+//   {
+//     allProjectsYaml {
+//       edges {
+//         node {
+//           title
+//           pText
+//           image
+//           sc
+//           live
+//         }
+//       }
+//     }
+//   }
+// `;
 
 const StyledPortfolio = styled.div`
   grid-column: 2 / span 2;
@@ -57,6 +75,20 @@ const Content = styled.div`
 `;
 
 const Portfolio = () => {
+  const data = useStaticQuery<AllProjectsQuery>(graphql`
+    query AllProjects {
+      allProjectsYaml {
+        nodes {
+          title
+          pText
+          image
+          sc
+          live
+        }
+      }
+    }
+  `);
+
   return (
     <StyledPortfolio>
       <Content>
@@ -66,15 +98,16 @@ const Portfolio = () => {
         </div>
         <div className="carousel-wrapper">
           <Carousel arrows infinite>
-            <PortCard
-              title="YES"
-              pText="THE PROPS WORKED"
-              image="https://via.placeholder.com/150"
-              sc="https://github/.com"
-              live="https://github.com"
-            />
-            <PortCard />
-            <PortCard />
+            {data.allProjectsYaml.nodes.map(project => (
+              <PortCard
+                key={project.title}
+                title={project.title}
+                pText={project.pText}
+                image={project.image}
+                sc={project.sc}
+                live={project.live}
+              />
+            ))}
           </Carousel>
         </div>
       </Content>
