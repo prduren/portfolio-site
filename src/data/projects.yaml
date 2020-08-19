@@ -8,7 +8,7 @@
 - project2:
   title: Test title2
   pText: Test pText2
-  image: https://via.placeholder.com/160
+  image: ../icons/js.png
   sc: https://github.com
   live: https://github.com
 
