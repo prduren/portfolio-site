@@ -7,22 +7,6 @@ import { fancyHr } from './styles/Keyframes';
 import { graphql, useStaticQuery } from 'gatsby';
 import { AllProjectsQuery } from '../queries';
 
-// const projectsQuery = graphql`
-//   {
-//     allProjectsYaml {
-//       edges {
-//         node {
-//           title
-//           pText
-//           image
-//           sc
-//           live
-//         }
-//       }
-//     }
-//   }
-// `;
-
 const StyledPortfolio = styled.div`
   grid-column: 2 / span 2;
   margin-left: 2rem;

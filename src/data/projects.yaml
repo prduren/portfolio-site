@@ -1,14 +1,14 @@
 - project1:
-  title: Test title
-  pText: Test pText
-  image: https://via.placeholder.com/150
+  title: Fresh Fits
+  pText: A fully functional, simple eCommerce site with account, payment, and more
+  image: ../icons/fresh.png
   sc: https://github.com
   live: https://github.com
 
 - project2:
   title: Test title2
   pText: Test pText2
-  image: https://via.placeholder.com/150
+  image: https://via.placeholder.com/160
   sc: https://github.com
   live: https://github.com
 
